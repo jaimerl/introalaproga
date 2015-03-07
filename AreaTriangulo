@@ -1,12 +1,9 @@
 #include "stdafx.h"
 #include<iostream>
 #include<cmath>
+#include "conio.h"
+
 using namespace std;
-
-
-#define ARREGLO_MAX 100
-
-
 
 int main() {
 	float a,b,c,p,area;
@@ -20,6 +17,10 @@ int main() {
 	p = (a+b+c)/2;
 	area = sqrtf(p*(p-a)*(p-b)*(p-c));
 	cout << "El area es; " << area << endl;
+	getch();
 	return 0;
 }
+
+
+
 
