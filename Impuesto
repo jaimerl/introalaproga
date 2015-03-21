@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+	float S,M,P,R;
+	cout << "ingrese salario: ";
+	cin >> S;
+	cout << "ingrese el salario minimo: ";
+	cin >> M;
+	cout << "ingrese el porcentaje: ";
+	cin >> P;
+	if (2*M<=S)
+		R=S*P/100;
+	else
+		R=0;
+	cout << "el porcentaje a pagar es: " << R;
+	getch();
+
+}
+
