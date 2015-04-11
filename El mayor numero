@@ -1,0 +1,21 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main (){
+	int n,m,p,I;
+	m = -9999;
+	cout<< "ingrese la cantidad de numeros que quiere comparar: ";
+	cin>> n;
+	for (I=1;I<=n;I++)
+	{
+		cout<< "ingrese un numero: ";
+		cin>> p;
+		if (m<p) 
+			m=p;
+	}
+	cout<< "el mayor es: "<<m;
+    getch ();
+}
