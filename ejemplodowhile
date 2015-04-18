@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main (){
+	char resp;
+	int ident,np,p1,p2,p3,ef,nf;
+	do{
+		cout<<"ingrese su ident: ";
+        cin>> ident;
+        cout<< "ingrese la nota practica: ";
+        cin>> np;
+        cout<< "parcial 1: ";
+        cin>> p1;
+        cout<< "parcial 2: ";
+        cin>> p2;
+        cout<< "parcial 3: ";
+        cin>> p3;
+        cout<< "ingrese la nota del examen final: ";
+        cin>> ef;
+        nf=np*0.2+((p1+p2+p3)/3)*0.4+ef*0.4;
+        cout<< "la nota final es: "<<nf<<endl;
+        cout<< "desea continuar: (s) o (n)";
+		cin>> resp;
+	} while (resp !='n') ;
+	getch();
+}
