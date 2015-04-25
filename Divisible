@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void main (){
+	int a,b,d,mayor,menor;
+	cout<< "Ingrese el primer numero: ";
+	cin>> a;
+	cout<< "Ingrese el segundo numero: ";
+	cin>> b;
+	if (a<b) {
+		mayor=b;
+		menor=a; }
+	else {
+		mayor=a;
+		menor=b;}
+	d=mayor%menor;
+	if (d==0) {
+		cout<< menor<<" divide al "<<mayor; }
+	else {
+		cout<< menor<<" no divide al "<<mayor; }
+	getch ();
+	}
