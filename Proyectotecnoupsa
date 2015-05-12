@@ -1,0 +1,166 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "Math.h"
+
+using namespace std;
+
+void main()
+{
+	int opcion, opcionB, opcionC, opcionD, opcionE, a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, y, z1, z2, z3, z4, z5, z6, z7, z8, z9, z10, z11, z12, z13, z14, z15, z16;
+	a=50; b=60; c=65; d=70; e=45; f=55; g=60; h=65; i=35; j=40; k=45; l=50; m=65; n=70; o=75; p=80;
+
+	 
+     cout<<"Bienvenido a Cine Estrella" <<endl;
+	 cout <<endl;
+     cout << "Elija su pelicula" <<endl;
+	 cout << "1.-Los Vengadores 2" <<endl;
+     cout << "2.-La Cenicienta" <<endl;
+     cout << "3.-Rapido y Furioso 7" <<endl;
+	 cout << "4.-Star Wars 7" <<endl;
+     cout << "0.-Salir" <<endl;
+     cout << "Elija su pelicula para saber el horario!: " <<endl;
+     cin >> opcion;
+    switch (opcion) {
+      case 1: 
+		   cout <<endl;
+		    cout << "LOS VENGADORES 2" <<endl;
+	        cout << "1.-11:30 am - 13:30 pm (50 bs. - 2D)" <<endl;
+            cout << "2.-14:00 pm - 16:30 pm (60 bs. - 3D)" <<endl;
+            cout << "3.-17:00 pm - 19:30 pm (65 bs. - 3D" <<endl;
+	        cout << "4.-20:00 pm - 22:30 pm (70 bs. - 2D)" <<endl;
+			cout << "0.-Salir" <<endl;
+            cout << "Elija su horario " <<endl;
+            cin >> opcionB;
+			 switch (opcionB) {
+             case 1: 
+			
+				 cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z1= a*y;
+				break;
+	         case 2:  cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z2= b*y;
+			 	 break;
+	         case 3:  cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z3= c*y;
+			 	 break;
+			 case 4: 
+				 cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z4= d*y;
+			 	 break;
+				
+	         case 0: cout << "Salir";break;
+	         default: cout << "Opcion invalida" << endl;
+          }
+         break;
+	  case 2: 
+
+
+		  cout <<endl;
+		    cout << "LA CENICIENTA" <<endl;
+	        cout << "1.-10:30 am - 12:30 pm (45 bs. - 2D)" <<endl;
+            cout << "2.-13:00 pm - 15:30 pm (55 bs. - 3D)" <<endl;
+            cout << "3.-16:00 pm - 18:30 pm (60 bs. - 3D" <<endl;
+	        cout << "4.-19:00 pm - 21:30 pm (65 bs. - 2D)" <<endl;
+			cout << "0.-Salir" <<endl;
+            cout << "Elija su horario " <<endl;
+            cin >> opcionC;
+			 switch (opcionC) {
+             case 1: 
+				cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z5= e*y;
+	         case 2: cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z6= f*y;
+			 	 break;
+	         case 3: cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z7= g*y;
+			 	 break;
+			 case 4: 
+				cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z8= h*y;
+			 	 break;
+
+	         case 0: cout << "Salir";break;
+	         default: cout << "Opcion invalida" << endl;
+          }
+         break;
+
+	case 3: 
+
+		cout <<endl;
+		    cout << "RAPIDO Y FURIOSO 7" <<endl;
+	        cout << "1.-9:30 am - 11:30 pm (35 bs. - 2D)" <<endl;
+            cout << "2.-12:00 pm - 14:30 pm (40 bs. - 3D)" <<endl;
+            cout << "3.-15:00 pm - 17:30 pm (45 bs. - 3D" <<endl;
+	        cout << "4.-18:00 pm - 20:30 pm (50 bs. - 2D)" <<endl;
+			cout << "0.-Salir" <<endl;
+            cout << "Elija su horario " <<endl;
+            cin >> opcionD;
+			 switch (opcionD) {
+             case 1: 
+				cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z9= i*y;
+	         case 2: cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z10= j*y;
+			 	 break;
+	         case 3:cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z11= k*y;
+			 	 break;
+			 case 4: 
+				 cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z12= l*y;
+			 	 break;
+
+	         case 0: cout << "Salir";break;
+	         default: cout << "Opcion invalida" << endl;
+          }
+         break;
+
+		 case 4: 
+
+
+		  cout <<endl;
+		    cout << "STAR WARS" <<endl;
+	        cout << "1.-8:00 am - 10:00 pm (65 bs. - 2D)" <<endl;
+            cout << "2.-9:00 m - 11:30 am  (70 bs. - 3D)" <<endl;
+            cout << "3.-16:00 pm - 18:30 pm (75 bs. - 3D" <<endl;
+	        cout << "4.-19:00 pm - 21:30 pm (80 bs. - 2D)" <<endl;
+			cout << "0.-Salir" <<endl;
+            cout << "Elija su horario " <<endl;
+            cin >> opcionE;
+			 switch (opcionE) {
+             case 1: 
+				cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z13= m*y;
+	         case 2: cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z14= n*y;
+	         case 3: cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z15= o*y;
+			 case 4: 
+				cout<< "Cuantas entradas desea comprar?"<< endl;
+				 cin>> y;
+				 z16= p*y;
+
+	         case 0: cout << "Salir";break;
+	         default: cout << "Opcion invalida" << endl;
+          }
+         break;
+
+	}
+   getch();
+}
