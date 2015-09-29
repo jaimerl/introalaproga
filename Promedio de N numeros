@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+void main(){
+	int i,c;
+	float p,a,x;
+	cin>> a;
+	x=0;
+	for(i=1;i<=a;i++){
+		cin>> c;
+		x=x+c;
+	}
+	p=x/a;
+	cout<< "El promdedio es: "<<p;
+    getch ();
+}
