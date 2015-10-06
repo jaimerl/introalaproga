@@ -1,0 +1,18 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+	void main(){
+		int a,b,c,d;
+		cout<< "Imgrese su numero: ";
+		cin >>a;
+		while (a>0){
+		b=a/10;
+		c=a%10;
+		cout<<c;
+		a=b;
+		}
+		system("pause");
+	}
