@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define NMAX 100
+using namespace std;
+void LEER_VEC(int*A,int d);
+int SUMAR_VEC(int*A,int d);
+
+void main(){
+	int n,A[NMAX],r;
+	cout<<"Ingrese el numero de elementos: ";
+	cin>> n;
+	LEER_VEC(A,n);
+	r=SUMAR_VEC(A,n);
+	cout<< "La suma es: "<<r<<endl;
+}
+
+void LEER_VEC(int*A,int d){
+	int i;
+	for(i=0;i<d;i++){
+		cin>> A[i];
+	}
+}
+int SUMAR_VEC(int*A,int d){
+	int s,i;
+	s=0;
+	for(i=0;i<d;i++){
+		s=s+A[i];
+	}
+	return s;
+}
