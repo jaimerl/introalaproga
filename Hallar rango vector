@@ -1,0 +1,51 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define NMAX 1000
+void Leervec(int*A,int n);
+int Mayorvec(int*A, int n);
+int Menorvec(int*A, int n);
+
+using namespace std;
+
+void main(){
+	int a,V[NMAX],n;  int x, y,k;
+	cout<<"Ingrese el valor n: ";
+	cin >>n;
+	Leervec(V,n);
+	x=Mayorvec(V,n);
+	y=Menorvec(V,n);
+	k=x-y;
+	cout<< "El rango es: "<<k<<endl;
+}
+
+
+void Leervec(int*A,int n){
+	int i;
+
+	for(i=0;i<n;i++){
+		cin>>A[i];
+	}
+}
+
+int Mayorvec(int*A,int n){
+	int M,i;
+	M=A[0];
+	for(i=1;i<n;i++){
+		if(A[i]>=M){
+			M=A[i];
+		}
+	}
+	return (M);
+}
+
+int Menorvec(int*A,int n){
+	int i,m;
+	m=A[0];
+	for(i=1;i<n;i++){
+		if(A[i]<=m){
+			m=A[i];
+		}
+	}
+	return (m);
+}
