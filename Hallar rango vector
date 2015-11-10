@@ -9,7 +9,7 @@ int Menorvec(int*A, int n);
 using namespace std;
 
 void main(){
-	int a,V[NMAX],n;  int x, y,k;
+	int V[NMAX],n,x,y,k;
 	cout<<"Ingrese el valor n: ";
 	cin >>n;
 	Leervec(V,n);
