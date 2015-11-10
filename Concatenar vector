@@ -1,0 +1,44 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#define NMAX 1000
+void Leervec(int*A, int n);
+void Concatenarvec(int*A,int*B,int*C,int ñ, int l);
+void Imprimirvec(int*C,int n);
+using namespace std;
+
+void main(){
+	int V1[NMAX],V2[NMAX],V3 [NMAX],n,m;
+	cout<<"Ingrese los valores n y m: ";
+	cin>>n;
+	cin>>m;
+	Leervec(V1,n);
+	Leervec(V2,m);
+	Concatenarvec(V1,V2,V3,n,m);
+	Imprimirvec(V3,n+m);
+}
+
+void Leervec(int*A,int ñ){
+	int i;
+	for(i=0;i<ñ;i++){
+		cin>> A[i];
+	}
+}
+
+void Concatenarvec(int*A,int*B,int*C,int n,int l){
+	int i,j;
+	for(i=0;i<n;i++){
+		C[i]=A[i];
+	}
+	for(j=n+1;j<l+n;j++){
+		C[j]=B[j];
+	}
+}
+
+void Imprimirvec(int*C,int n){
+	int i;
+	for(i=0;i<=i;i++){
+	cout<<C[i];
+	}
+}
+
