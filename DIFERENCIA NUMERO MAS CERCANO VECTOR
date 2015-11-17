@@ -1,0 +1,38 @@
+#include "stdafx.h"
+#define nmax 1000
+void leer(int*a,int n){
+	int i;
+	for(i=0;i<n;i++){scanf("%d",&a[i]);}	
+}
+void diferencias(int*a,int*b,int x,int n){
+	int i,r;
+	for(i=0;i<n;i++){
+		r=a[i]-x;
+		if(r<0){r=r*(-1);}
+	b[i]=r;
+	}
+}
+int minimo(int*a,int*b,int n){
+	int i,min,ref;
+	min=a[0];ref=a[0];
+	for(i=0;i<n;i++){
+		if(b[i]<=min){
+		min=b[i];ref=a[i];
+		}
+	
+	}
+	return ref;
+}
+
+
+
+int main(void)
+{int n,x,m,a[nmax],b[nmax];
+printf("diga el tamaño del vector \n");scanf("%d",&n);
+printf("diga la X \n");scanf("%d",&x);
+leer(a,n);
+diferencias(a,b,x,n);
+m=minimo(a,b,n);
+printf("el valor proximo a X es %d \n",m);
+	return 0;
+}
